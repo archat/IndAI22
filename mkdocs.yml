@@ -28,3 +28,6 @@ nav:
   - Home: index.md
   - Term1:
     - Basic: term1/01.md
+
+extra:
+  generator: false

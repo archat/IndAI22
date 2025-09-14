@@ -1,0 +1,10 @@
+.hero {
+  background: url('../images/bg.jpg') center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 6rem 2rem;
+  border-radius: 12px;
+}
+.hero h1, .hero p {
+  text-shadow: 0 2px 6px rgba(0,0,0,0.6);
+}

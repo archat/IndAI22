@@ -1,5 +1,8 @@
 site_name: IndAI
-site_url: https://mydomain.org/mysite
+site_url: https://archat.github.io/IndAI22
+site_author: Archat
+site_description: A beginner-friendly guide to understanding and implementing AI concepts.
+
 theme:
   palette: 
     # Palette toggle for light mode
@@ -7,27 +10,65 @@ theme:
       toggle:
         icon: material/brightness-7 
         name: Switch to dark mode
+      primary: blue
+      accent: deep orange
     # Palette toggle for dark mode
     - scheme: slate
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
+      primary: deep orange
+      accent: deep purple
   name: material
+  # custom_dir: docs/.overrides
   features:
-    - navigation.instant
-    - navigation.instant.progress
-    - navigation.instant.preview    
-    - navigation.tracking
-    - navigation.tabs
-    - navigation.tabs.
-    - navigation.section
+    - announce.dismiss
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    - content.tooltips
     - navigation.expand
-    - toc.integrate
+    - navigation.footer
+    - navigation.instant
+    - navigation.prune
+    - navigation.sections
+    - navigation.top
+    - navigation.tabs
+    - search.highlight
+    - search.share
+    - search.suggest
 
 nav:
   - Home: index.md
-  - Term1:
-    - Basic: term1/01.md
+  # - Term1:
+    # - Basic: term1/01.md
+  - CNN:
+    - Intro: CNN/01_intro.md
+  - ADAS:
+    - Intro: ADAS/01_intro.md
+    # - Ad: ADAS/02_ad.md
+    - intro 2: ADAS/00_temp.md
+  
 
 extra:
   generator: false
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/
+    - icon: fontawesome/brands/youtube
+      link: https://youtube.com/
+
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - admonition
+  - footnotes
+  - def_list
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
